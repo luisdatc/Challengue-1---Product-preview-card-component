@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(30deg, 38%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 2rem 2rem;
+}
+
+.card {
+  border-radius: 10px;
+  background: white;
+}
+.card--img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card--body {
+  padding: 1.5rem;
+}
+.card--tittle {
+  letter-spacing: 0.5rem;
+  padding: 0.5rem 0 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.card--main--tittle {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0rem 0 2rem 0;
+  color: black;
+}
+.card--text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 1rem 1rem 0;
+  color: hsl(228deg, 12%, 48%);
+  line-height: 2.5rem;
+}
+.card--price {
+  display: flex;
+  align-items: center;
+  padding: 0rem 0 1.5rem 0;
+}
+.card--price span:first-child {
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  color: hsl(158deg, 36%, 37%);
+  font-weight: 700;
+}
+.card--price span:last-child {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 0 2rem;
+  text-decoration: line-through;
+}
+.card--button {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 1.6rem 0;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  word-spacing: 0.2rem;
+  background-color: hsl(158deg, 36%, 37%);
+  color: white;
+  cursor: pointer;
+}
+.card--button:hover {
+  background-color: hsl(212deg, 21%, 14%);
+}
+
+@media (min-width: 992px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 555px;
+  }
+  .card--img {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+  .card--text {
+    padding-bottom: 2rem;
+  }
+  .card--body {
+    width: 530px;
+    color: hsl(158deg, 36%, 37%);
+    padding: 2.5rem 1.5rem 2rem 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
